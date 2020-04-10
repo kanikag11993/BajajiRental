@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateProperty {
+  onCreateProperty {
+    id
+    name
+    description
+  }
+}
+subscription OnUpdateProperty {
+  onUpdateProperty {
+    id
+    name
+    description
+  }
+}
+subscription OnDeleteProperty {
+  onDeleteProperty {
+    id
+    name
+    description
+  }
+}

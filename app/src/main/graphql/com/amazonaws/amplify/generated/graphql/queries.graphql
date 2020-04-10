@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+query GetProperty($id: ID!) {
+  getProperty(id: $id) {
+    id
+    name
+    description
+  }
+}
+query ListPropertys(
+  $filter: ModelPropertyFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPropertys(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      description
+    }
+    nextToken
+  }
+}

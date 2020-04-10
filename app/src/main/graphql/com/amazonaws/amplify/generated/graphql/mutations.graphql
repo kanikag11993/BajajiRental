@@ -1,0 +1,31 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateProperty(
+  $input: CreatePropertyInput!
+  $condition: ModelPropertyConditionInput
+) {
+  createProperty(input: $input, condition: $condition) {
+    id
+    name
+    description
+  }
+}
+mutation UpdateProperty(
+  $input: UpdatePropertyInput!
+  $condition: ModelPropertyConditionInput
+) {
+  updateProperty(input: $input, condition: $condition) {
+    id
+    name
+    description
+  }
+}
+mutation DeleteProperty(
+  $input: DeletePropertyInput!
+  $condition: ModelPropertyConditionInput
+) {
+  deleteProperty(input: $input, condition: $condition) {
+    id
+    name
+    description
+  }
+}

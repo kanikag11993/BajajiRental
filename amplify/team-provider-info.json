@@ -1,0 +1,15 @@
+{
+    "balajienv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-balajirental-balajienv-225048-authRole",
+            "UnauthRoleArn": "arn:aws:iam::141280147781:role/amplify-balajirental-balajienv-225048-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::141280147781:role/amplify-balajirental-balajienv-225048-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-balajirental-balajienv-225048-deployment",
+            "UnauthRoleName": "amplify-balajirental-balajienv-225048-unauthRole",
+            "StackName": "amplify-balajirental-balajienv-225048",
+            "StackId": "arn:aws:cloudformation:eu-west-1:141280147781:stack/amplify-balajirental-balajienv-225048/a1eae4a0-7b4f-11ea-b656-06d3aeb0d9f6",
+            "AmplifyAppId": "d21x8hmd7nki0j"
+        }
+    }
+}
