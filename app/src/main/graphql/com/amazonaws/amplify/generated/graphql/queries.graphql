@@ -20,3 +20,48 @@ query ListPropertys(
     nextToken
   }
 }
+query GetPropertyTest($owner: String!, $flatName: String!) {
+  getPropertyTest(owner: $owner, flatName: $flatName) {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}
+query ListPropertyTests(
+  $owner: String
+  $flatName: ModelStringKeyConditionInput
+  $filter: ModelPropertyTestFilterInput
+  $limit: Int
+  $nextToken: String
+  $sortDirection: ModelSortDirection
+) {
+  listPropertyTests(
+    owner: $owner
+    flatName: $flatName
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    sortDirection: $sortDirection
+  ) {
+    items {
+      flatName
+      address
+      tenantName
+      monthlyRent
+      waterCost
+      electricityPerUnitCost
+      previousMonthElectricMeterReading
+      currentMonthElectricMeterReading
+      status
+      owner
+    }
+    nextToken
+  }
+}

@@ -29,3 +29,54 @@ mutation DeleteProperty(
     description
   }
 }
+mutation CreatePropertyTest(
+  $input: CreatePropertyTestInput!
+  $condition: ModelPropertyTestConditionInput
+) {
+  createPropertyTest(input: $input, condition: $condition) {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}
+mutation UpdatePropertyTest(
+  $input: UpdatePropertyTestInput!
+  $condition: ModelPropertyTestConditionInput
+) {
+  updatePropertyTest(input: $input, condition: $condition) {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}
+mutation DeletePropertyTest(
+  $input: DeletePropertyTestInput!
+  $condition: ModelPropertyTestConditionInput
+) {
+  deletePropertyTest(input: $input, condition: $condition) {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}

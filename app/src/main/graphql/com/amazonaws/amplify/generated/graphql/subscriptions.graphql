@@ -20,3 +20,45 @@ subscription OnDeleteProperty {
     description
   }
 }
+subscription OnCreatePropertyTest {
+  onCreatePropertyTest {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}
+subscription OnUpdatePropertyTest {
+  onUpdatePropertyTest {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}
+subscription OnDeletePropertyTest {
+  onDeletePropertyTest {
+    flatName
+    address
+    tenantName
+    monthlyRent
+    waterCost
+    electricityPerUnitCost
+    previousMonthElectricMeterReading
+    currentMonthElectricMeterReading
+    status
+    owner
+  }
+}

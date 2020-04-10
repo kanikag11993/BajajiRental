@@ -3,3 +3,23 @@ type Property @model {
   name: String!
   description: String
 }
+
+type PropertyTest @model @key(fields: ["owner", "flatName"]) {
+  flatName: String!
+  address: String!
+  tenantName: String!
+  monthlyRent: String!
+  waterCost : Float!
+  electricityPerUnitCost : Float!
+  previousMonthElectricMeterReading : Int!
+  currentMonthElectricMeterReading : Int!
+  status: Status!
+  owner : String!
+}
+
+enum Status {
+  OCCUPIED
+  VACANT
+  UNDER RENOVATION
+  OTHER
+}
