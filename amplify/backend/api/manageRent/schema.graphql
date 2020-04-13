@@ -1,25 +1,7 @@
-type Property @model {
-  id: ID!
-  name: String!
-  description: String
-}
-
-type PropertyTest @model @key(fields: ["owner", "flatName"]) {
+type Electricity @model @key(fields: ["flatName", "date"]) {
   flatName: String!
-  address: String!
-  tenantName: String!
-  monthlyRent: String!
-  waterCost : Float!
-  electricityPerUnitCost : Float!
-  previousMonthElectricMeterReading : Int!
-  currentMonthElectricMeterReading : Int!
-  status: Status!
-  owner : String!
-}
-
-enum Status {
-  OCCUPIED
-  VACANT
-  UNDER RENOVATION
-  OTHER
+  date: AWSDate!
+  month: Int
+  meterReading: Float!
+  updatedAt: AWSDateTime!
 }
