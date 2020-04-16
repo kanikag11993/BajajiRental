@@ -1,6 +1,10 @@
 package com.balaji.rental;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +16,7 @@ import com.amazonaws.mobileconnectors.appsync.AWSAppSyncClient;
 import com.apollographql.apollo.GraphQLCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.UUID;
 
@@ -27,12 +32,31 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BottomNavigationView navView = findViewById(R.id.nav_view);
+
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                .build();
+        // enabling action bar app icon and behaving it as toggle button
+
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        NavigationUI.setupWithNavController(navView, navController);
         mAWSAppSyncClient = AWSAppSyncClient.builder()
                 .context(getApplicationContext())
                 .awsConfiguration(new AWSConfiguration(getApplicationContext()))
                 .build();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         runMutation();
         runMutationTest();
     }
