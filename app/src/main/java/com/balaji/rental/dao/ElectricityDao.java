@@ -7,7 +7,6 @@ import com.amazonaws.mobileconnectors.appsync.fetcher.AppSyncResponseFetchers;
 import com.apollographql.apollo.api.Mutation;
 import com.apollographql.apollo.api.Operation;
 import com.apollographql.apollo.api.Query;
-import com.balaji.rental.dao.exception.RecordAlreadyExistsException;
 
 import javax.annotation.Nonnull;
 

@@ -25,7 +25,6 @@ public class PropertyListAdapter extends RecyclerView.Adapter<PropertyListAdapte
     private ArrayList<PropertyModel> propertyModel;
     private HomeFragment.PropertyCLickListener mListener;
 
-
     /**
      * Constructor for our adapter class
      */
@@ -66,8 +65,8 @@ public class PropertyListAdapter extends RecyclerView.Adapter<PropertyListAdapte
         public PropertyViewHolder(final @NonNull View itemView) {
             super(itemView);
 
-            title = itemView.findViewById(R.id.cat_card_title);
-            subtitle = itemView.findViewById(R.id.cat_card_title);
+            title = itemView.findViewById(R.id.property_name);
+            subtitle = itemView.findViewById(R.id.property_description);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
