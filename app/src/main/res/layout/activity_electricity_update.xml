@@ -11,17 +11,28 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.Balaji.AppBarOverlay">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Balaji.PopupOverlay" />
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_dashboard_black_24dp"
+            app:popupTheme="@style/Theme.Balaji.PopupOverlay"
+            app:title="@string/bp_electricity" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- Note: A RecyclerView can also be used -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Scrollable content -->
+
+    </androidx.core.widget.NestedScrollView>
+
     <include layout="@layout/content_electricity_update" />
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

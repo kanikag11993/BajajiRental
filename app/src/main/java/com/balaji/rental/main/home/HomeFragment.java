@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment {
             }
         });
         for (int i = 0; i < 10; i++) {
-            propertyModelList.add(new PropertyModel("title " + i, " Like any other social media site Facebook has length requirements when it comes to writing on the wall, providing status, messaging and commenting."));
+            propertyModelList.add(new PropertyModel("title " + i, "Like any other."));
         }
 
         layoutManager = new LinearLayoutManager(getContext());

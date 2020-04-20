@@ -12,8 +12,6 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="bp_property_description">Property Description</string>
-    <string name="bp_property_title">Property Title</string>
     <string name="date">Date</string>
     <string name="select_date">Select Date</string>
     <string name="meter_reading">Meter Reading</string>
@@ -27,5 +25,9 @@
     <string name="bp_button_next">Next</string>
     <string name="bp_button_cancel">Cancel</string>
     <string name="bp_error_password">Password must contain at least 8 characters.</string>
-
+    <string name="view_bills">View Bill</string>
+    <string name="edit_details">Edit</string>
+    <string name="bp_property_description">Property Description</string>
+    <string name="bp_property_title">Property Title</string>
+    <string name="bp_electricity">Electricity</string>
 </resources>

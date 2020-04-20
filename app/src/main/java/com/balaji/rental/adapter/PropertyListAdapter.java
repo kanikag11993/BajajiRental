@@ -44,8 +44,8 @@ public class PropertyListAdapter extends RecyclerView.Adapter<PropertyListAdapte
     @Override
     public void onBindViewHolder(@NonNull PropertyViewHolder holder, int position) {
         PropertyModel navigator = propertyModel.get(position);
-        holder.title.setText(navigator.getPropertySubtitle());
-        holder.subtitle.setText(navigator.getPropertyTitle());
+        holder.title.setText(navigator.getPropertyTitle());
+        holder.subtitle.setText(navigator.getPropertySubtitle());
     }
 
     @Override

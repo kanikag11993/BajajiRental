@@ -44,7 +44,7 @@ public class PropertyListFragment extends Fragment {
         //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        return inflater.inflate(R.layout.bp_property_list_fragment, container, false);
+        return view;
     }
 
     @Override
