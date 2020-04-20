@@ -30,4 +30,6 @@
     <string name="bp_property_description">Property Description</string>
     <string name="bp_property_title">Property Title</string>
     <string name="bp_electricity">Electricity</string>
+    <string name="shared_pref">shared_pref</string>
+
 </resources>

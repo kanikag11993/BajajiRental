@@ -40,7 +40,7 @@ public class LoginFragment extends Fragment {
                     passwordTextInput.setError(getString(R.string.bp_error_password));
                 } else {
                     passwordTextInput.setError(null); // Clear the error
-                    ((NavigationHost) getActivity()).navigateTo(new PropertyListFragment(), false); // Navigate to the next Fragment
+                    ((NavigationHost) getActivity()).userLoggedIn(); // Navigate to the next Fragment
                 }
             }
         });
