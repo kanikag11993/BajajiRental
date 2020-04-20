@@ -27,5 +27,6 @@
     <string name="bp_button_next">Next</string>
     <string name="bp_button_cancel">Cancel</string>
     <string name="bp_error_password">Password must contain at least 8 characters.</string>
+    <string name="shared_pref">shared_pref</string>
 
 </resources>

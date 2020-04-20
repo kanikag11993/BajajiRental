@@ -2,14 +2,9 @@ package com.balaji.rental.dao;
 
 import android.util.Log;
 
-import com.amazonaws.amplify.generated.graphql.CreatePropertyMutation;
-import com.amazonaws.amplify.generated.graphql.GetElectricityQuery;
-import com.amazonaws.amplify.generated.graphql.ListElectricitysQuery;
-import com.amazonaws.amplify.generated.graphql.ListPropertysQuery;
 import com.amazonaws.mobileconnectors.appsync.AWSAppSyncClient;
 import com.amazonaws.mobileconnectors.appsync.fetcher.AppSyncResponseFetchers;
 import com.apollographql.apollo.GraphQLCall;
-import com.apollographql.apollo.api.InputType;
 import com.apollographql.apollo.api.Mutation;
 import com.apollographql.apollo.api.Operation;
 import com.apollographql.apollo.api.Query;
