@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationHost {
         loginFragmentView = findViewById(R.id.login_fragment);
         Boolean isUserLoggedIn = sharedPref.getBoolean(IS_USER_LOGGED_IN, false);
         if (isUserLoggedIn) {
-
+            loginFragmentView.setVisibility(View.GONE);
             // Passing each menu ID as a set of Ids because each
             // menu should be considered as top level destinations.
             AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
